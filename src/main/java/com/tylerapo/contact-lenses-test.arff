@@ -1,0 +1,14 @@
+@relation contact-lenses
+
+@attribute age 			{young, pre-presbyopic, presbyopic}
+@attribute spectacle-prescrip	{myope, hypermetrope}
+@attribute astigmatism		{no, yes}
+@attribute tear-prod-rate	{reduced, normal}
+@attribute contact-lenses	{soft, hard, none}
+
+@data
+presbyopic,myope,yes,normal,hard
+pre-presbyopic,hypermetrope,no,reduced,none
+young,hypermetrope,yes,normal,hard
+young,myope,no,reduced,none
+presbyopic,hypermetrope,yes,normal,none
