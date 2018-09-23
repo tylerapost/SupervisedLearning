@@ -5,7 +5,7 @@ Weka Implementations of Various Machine Learning Algorithms
 To run each algorithm
 
 1. clone the repo
-2. 
+2. go to weka-decision-trees directory
 
 mvn:exec@<id>
 
