@@ -86,7 +86,7 @@ public class DecisionTreeDemo {
 		/** Print the algorithm summary */
 		System.out.println("** Decision Tress Evaluation with Datasets **");
 		System.out.println(evalId3.toSummaryString());
-		System.out.print(" the expression for the input data as per algorithm is ");
+		System.out.print(" the expression for the input data as per alogorithm is ");
 		System.out.println(id3Classifier);
 		System.out.println(evalId3.toMatrixString());
 		System.out.println(evalId3.toClassDetailsString());

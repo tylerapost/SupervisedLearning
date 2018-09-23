@@ -4,10 +4,8 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 
 import weka.classifiers.Evaluation;
-import weka.classifiers.functions.LibSVM;
 import weka.classifiers.functions.SMO;
 import weka.core.Instances;
-import weka.core.SerializationHelper;
 import weka.core.converters.ArffLoader;
 
 // found at: https://www.programcreek.com/java-api-examples/?api=weka.classifiers.functions.LibSVM
@@ -21,7 +19,7 @@ public class SVMWekaDemo {
 		/** the arffloader to load the arff file */
 		ArffLoader loader = new ArffLoader();
 		/** load the traing data */
-		loader.setSource(KNNDemo.class.getResourceAsStream("./" + fileName));
+		loader.setSource(SVMWekaDemo.class.getResourceAsStream("./" + fileName));
 		/**
 		 * we can also set the file like loader3.setFile(new
 		 * File("test-confused.arff"));
@@ -37,8 +35,8 @@ public class SVMWekaDemo {
 		SMO wekaClassifier = new SMO();
 		wekaClassifier.setOptions(new String[] {"-B", "-H"});
 
-		Instances preparedData = getDataSet("./vote.arff");
-		Instances preparedTest = getDataSet("./voteTest.arff");
+		Instances preparedData = getDataSet("cpu.arff");
+		Instances preparedTest = getDataSet("cpuTest.arff");
 		
 		System.out.println("Reading train set and test set done!");
 

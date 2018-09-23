@@ -16,7 +16,7 @@ public class NeuralNetworkDemo {
 		/** the arffloader to load the arff file */
 		ArffLoader loader = new ArffLoader();
 		/** load the traing data */
-		loader.setSource(KNNDemo.class.getResourceAsStream("./" + fileName));
+		loader.setSource(NeuralNetworkDemo.class.getResourceAsStream("./" + fileName));
 		/**
 		 * we can also set the file like loader3.setFile(new
 		 * File("test-confused.arff"));

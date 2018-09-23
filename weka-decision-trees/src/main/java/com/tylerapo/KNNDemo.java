@@ -51,7 +51,7 @@ public class KNNDemo {
 	 */
 	public static void main(String[] args) throws Exception {
 		for(int i = 1;i < 6; i++) {
-			Instances data = getDataSet("cpu.arff");
+			Instances data = getDataSet("vote.arff");
 			data.setClassIndex(data.numAttributes() - 1);
 			//k - the number of nearest neighbors to use for prediction
 			Classifier ibk = new IBk(i);		
